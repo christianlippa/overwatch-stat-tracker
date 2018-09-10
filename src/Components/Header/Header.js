@@ -4,8 +4,8 @@ import styled from "styled-components"
 const OverwatchLogo = styled.img`
   display: block;
   margin: 0 auto;
-  height: 40vh;
-  width: auto;
+  height: auto;
+  width: 25%;
   margin-bottom: 5vh;
 `
 const LogoContainer = styled.div`
