@@ -5,7 +5,7 @@ const OverwatchLogo = styled.img`
   display: block;
   margin: 0 auto;
   height: auto;
-  width: 25%;
+  width: 12%;
   margin-bottom: 5vh;
 `
 const LogoContainer = styled.div`
