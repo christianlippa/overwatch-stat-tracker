@@ -2,6 +2,13 @@ import React, { PureComponent } from 'react';
 import styled from "styled-components"
 
 import Header from "../Header/Header"
+/*
+  In this component I wanted to dynamical render the headings of 
+  the stats as well as the data but only got around to doing the 
+  data with the 6 hour time limit I gave myself. Since the data headings
+  were static in this case anyway it wouldn't add much it would just look 
+  much cleaner.
+*/
 
 const ListItemDetailContainer = styled.div`
   flex: 1;
@@ -51,7 +58,6 @@ class ListItemDetail extends PureComponent {
   }
 
   render() {
-    console.log(this.props.location.state.data)
     const { 
       eliminationsPerLife = 0, 
       gamesWon = 0, 

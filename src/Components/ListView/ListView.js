@@ -2,13 +2,20 @@
 import React, { Component } from 'react';
 import styled from "styled-components"
 import { Router, Route, Link } from "react-router-dom";
-// API
+
 import { getPlayerData } from "../../API/OverwatchAPI"
-// Components
+
 import Header from "../Header/Header"
 import UserHeader from "../UserHeader/UserHeader"
 import ListItem from "./ListItem"
 
+/*
+  For this section I wanted to allow the user more choice and let them pick which 
+  heroes data to display but ran out of time and just hard coded the three that I use the most.
+
+  Also I am aware that this page is running in perfect circumstances and given more time would have
+  implemented error handling to catch missing data from the previous submit page.
+*/
 
 const ListViewContainer = styled.div`
   flex: 1;
@@ -18,8 +25,6 @@ const ListViewContainer = styled.div`
   width: 100vw;
   height: 100vh;
 `
-
-const UserInfoSection = styled.div``
 
 class ListView extends Component {
   constructor(props){
@@ -49,6 +54,7 @@ class ListView extends Component {
     .catch(err => {
       console.error(err.toString())
       this.setState({ error: true })
+      // ERROR HANDLING
     });
   }
 

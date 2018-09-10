@@ -64,16 +64,11 @@ class UserHeader extends Component {
     fetch(newApiString)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
       this.setState({ data })
     })
     .catch(err => console.error(err.toString()));
   }
-
-  parseUserHeaderData = () => {
-    console.log(this.state.data)
-  }
-
+  
   render() {
     const { icon = "https://d1u1mce87gyfbn.cloudfront.net/game/rank-icons/season-2/rank-7.png", username = "Kiid", rating = "Grandmaster", gamesWon = "1249", region = "North America" } = this.props;
     return (
