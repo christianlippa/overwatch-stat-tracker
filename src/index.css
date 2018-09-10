@@ -1,0 +1,6 @@
+body {
+  display: flex;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
